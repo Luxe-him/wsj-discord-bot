@@ -6,7 +6,7 @@ from datetime import datetime
 import feedparser
 import requests
 
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1467672706517569618/2otpYZif5snjquujq2LF1V_shZSJm28OMZ9kdtwOJsBMrKlvS0WG92Sl61TIt67dZjJJ"
+DISCORD_WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
 WSJ_RSS_URL = "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
 
 BASE_DIR = Path(__file__).resolve().parent
